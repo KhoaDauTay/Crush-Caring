@@ -13,7 +13,8 @@ from .views import (
     RequestRefundView,
     Appointment,
     Booking,
-    booking_add
+    booking_add,
+    SearchResultsView
 )
 
 
@@ -22,7 +23,7 @@ app_name = 'core'
 urlpatterns = [
     path('', Home, name='home'),
     path('shoppage/', ShopView.as_view(), name='shoppage'),
-
+    path('search/', SearchResultsView.as_view(), name='search_results'),
     path('booking/', Booking, name="booking"),
     path('bookingadd/<slug>/', booking_add, name='booking-add'),
     path('appointment', Appointment, name="appointment"),

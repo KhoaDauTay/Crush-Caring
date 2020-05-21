@@ -13,6 +13,7 @@ from django.core.mail import send_mail
 import random
 import string
 import stripe
+from django.db.models import Q
 stripe.api_key = settings.STRIPE_SECRET_KEY
 
 
@@ -569,3 +570,15 @@ def Appointment(request):
         })
     else:
         return render(request, 'home.html')
+
+
+class SearchResultsView(ListView):
+    model = Patient
+    template_name = 'search_results.html'
+
+    def get_queryset(self):  # new
+        query = self.request.GET.get('q')
+        object_list = Patient.objects.filter(
+            Q(ptName__icontains=query) | Q(ptIdCard__icontains=query)
+        )
+        return object_list

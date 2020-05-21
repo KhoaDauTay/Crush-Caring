@@ -198,7 +198,7 @@
     body {
         font-family: 'Montserrat', sans-serif;
         margin: 0;
-        background: url("/static_env/image/background.png") no-repeat;
+        background: url("") no-repeat;
         background-size: cover;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -254,7 +254,7 @@
     }
     
     .w3layouts-main h2 {
-        color: #fff;
+        color: black;
         font-size: 29px;
         letter-spacing: 2px;
         text-transform: uppercase;
@@ -287,12 +287,12 @@
         outline: none;
         font-size: 18px;
         font-weight: 300;
-        color: white;
+        color: black;
         margin-bottom: 20px;
         font-family: 'Montserrat', sans-serif;
         border: 1px solid #fff;
         background: transparent;
-        background: rgba(0, 0, 0, 0.8);
+        background: #fff;
         letter-spacing: 1px;
         border-radius: 3px;
         -webkit-border-radius: 3px;
@@ -343,7 +343,7 @@
     
     label {
         float: left;
-        color: white;
+        color: black;
         font-size: 1em;
     }
     /*--placeholder-color--*/
