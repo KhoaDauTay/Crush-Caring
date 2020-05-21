@@ -7,7 +7,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark mdb-color lighten-3 mt-3 mb-5">
 
             <!-- Navbar brand -->
-            <span class="navbar-brand">Categories:</span>
+            <span class="navbar-brand">Chuyên Khoa: </span>
 
             <!-- Collapse button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,13 +25,16 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Musculoskeletal</a>
+                        <a class="nav-link" href="#">Tai-Mũi-Họng</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Neurology</a>
+                        <a class="nav-link" href="#">Thần Kinh</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Gastroenterology</a>
+                        <a class="nav-link" href="#">Nội tiết</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Khoa Nhi</a>
                     </li>
 
                 </ul>
@@ -39,7 +42,7 @@
 
                 <form class="form-inline">
                     <div class="md-form my-0">
-                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Tìm Kiếm" aria-label="Search">
                     </div>
                 </form>
             </div>
@@ -49,7 +52,7 @@
         <!--/.Navbar-->
         <div class="container mt-5" id="Products">
             <section class="dark-grey-text text-center">
-                <h2 class="font-weight-bold mb-4 pb-2" id="Shirt">Choose the doctor that's right for you</h2>
+                <h2 class="font-weight-bold mb-4 pb-2" id="Shirt">Hãy chọn bác sĩ của bạn tại đây</h2>
                 <div class="row">
                     {% for item in object_list %}
                     <div class="col-lg-3 col-md-6 mb-4">
@@ -76,11 +79,11 @@
                             </div>
 
                             <div class="card-footer px-1">
-                                <span class="float-left font-weight-bold ">
-                                    <h5 class="font-weight-bold blue-text">
+                                <span class="float-center font-weight-bold ">
+                                    <h5 class="font-weight-bold blue-text justify-content-center">
                                         <strong>
 
-                                            {{ item.price }}$/time
+                                            {{ item.dept }}
 
                                         </strong>
                                     </h5>

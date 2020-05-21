@@ -25,10 +25,10 @@
                     </div>
 
                     <p class="lead">
-                        <span>{{ object.price }}$/time</span>
+                        <span>{{ object.dept }}</span>
                     </p>
 
-                    <p class="lead font-weight-bold">Description</p>
+                    <p class="lead font-weight-bold">Kinh nghiệm :</p>
 
                     <p>{{ object.description }}</p>
 
@@ -43,11 +43,11 @@
 
                     </form> {% endcomment %}
                     <a href="{{object.get_booking_add}}" class="btn btn-primary btn-md my-0 p">
-                        Booking Now
+                        Đặt lịch ngay
                         <i class="fas fa-calendar-week ml-2"></i>
                     </a>
                     <a href="/feedback" class="btn btn-danger btn-md my-0 p">
-                        Send feedback
+                        Gửi phản hồi
                         <i class="fas fa-comment-dots ml-2"></i>
                     </a>
 

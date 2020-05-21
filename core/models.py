@@ -22,6 +22,7 @@ class Item(models.Model):
     price = models.FloatField()
     slug = models.SlugField()
     description = models.TextField()
+    dept = models.CharField(max_length=100)
 
     def __str__(self):
         return self.title
@@ -67,6 +68,8 @@ class Patient(models.Model):
 ADDRESS_CHOICES = (
     ('B', 'Billing'),
     ('S', 'Shipping'),
+
+
 )
 
 

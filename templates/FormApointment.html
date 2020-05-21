@@ -1,67 +1,52 @@
 {% extends "baseform.html" %} {% block content %}
 <!-- Main Content -->
-<div class="main" style="background-image: url('https://image.shutterstock.com/image-photo/doctor-white-coat-stethoscope-holding-600w-173284577.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-    <div class="main-w3l">
-        <h1 class="logo-w3">Kiểm tra thông tin lịch hẹn</h1>
 
-        <div class="w3layouts-main">
-            <!--  -->
-            <div>
-                <label for="">Họ và Tên</label>
-                <p>{{your_name}}</p>
-                <br>
-                <br>
-                <label for="">Tuổi</label>
-                <p>{{your_age}}</p>
-                <br>
-                <br>
-                <label for="">Số điện thoại</label>
-                <p>{{your_phone}}</p>
-                <br>
-                <br>
-                <label for="">SCMNN/SBHYT</label>
-                <p>{{your_idCard}}</p>
-                <br>
-                <br>
-                <label for="">Địa chỉ</label>
-                <p>{{your_address}}</p>
-                <br>
-                <br>
-                <label for="">Thành Phố</label>
-                <p>{{your_city}}</p>
-                <br>
-                <br>
-                <label for="">Quận/Huyện</label>
-                <p>{{your_province}}</p>
-                <br>
-                <br>
-                <label for="">Bệnh viện</label>
-                <p>{{your_hostpital}}</p>
-                <br>
-                <br>
-                <label for="">Khung giờ</label>
-                <p>{{your_time}} in {{your_date}}</p>
-                <br>
-                <br>
-            </div>
-        </div>
-        <h1 class="logo-w3">Hồ sơ bệnh án</h1>
-        <div class="w3layouts-main1">
-            <!--  -->
-            <div>
-                <label for="">Họ và Tên</label><br>
-                <label for="">Tuổi</label><br>
-                <label for="">Số điện thoại</label><br>
-                <label for="">SCMNN/SBHYT</label><br>
-                <label for="">Địa chỉ</label><br>
-                <label for="">Quận/Huyện</label><br>
-                <label for="">Bệnh viện</label><br>
-                <label for="">Khung giờ</label><br>
-            </div>
-        </div>
-        <!-- //main -->
+<div class="container z-depth-1 my-3 py-3">
 
-    </div>
+    <!-- Section -->
+    <section>
+
+        <style>
+            .border-top {
+                border-top-width: 2px !important;
+            }
+        </style>
+
+        <h2 class="font-weight-bold text-center grey-text text-uppercase small mb-4">Cảm ơn bạn đã đặt lịch hẹn</h2>
+        <h1 class="font-weight-bold text-center dark-grey-text pb-2">Thông tin lịch hẹn</h1>
+        <hr class="w-header my-4">
+        <div class="row d-flex justify-content-center">
+
+            <div class="col-md-6 col-lg-5 col-xl-4">
+                <h5 class="font-weight-normal border-top border-light pt-4 mb-4"><a class="dark-grey-text" href="#">Họ và tên</a></h5>
+                <p class="text-muted mb-5 pb-md-3">{{your_name}}</p>
+                <h5 class="font-weight-normal border-top border-light pt-4 mb-4"><a class="dark-grey-text" href="#">Điện Thoại</a></h5>
+                <p class="text-muted mb-5">{{your_phone}}</p>
+                <h5 class="font-weight-normal border-top border-light pt-4 mb-4"><a class="dark-grey-text" href="#">Địa Chỉ</a></h5>
+                <p class="text-muted mb-5">{{your_address}}</p>
+                <h5 class="font-weight-normal border-top border-light pt-4 mb-4"><a class="dark-grey-text" href="#">Quận Huyện</a></h5>
+                <p class="text-muted mb-5">{{your_province}}</p>
+                <h5 class="font-weight-normal border-top border-light pt-4 mb-4"><a class="dark-grey-text" href="#">Thành Phố</a></h5>
+                <p class="text-muted mb-5">{{your_city}}</p>
+            </div>
+
+            <div class="col-md-6 col-lg-5 col-xl-4">
+                <h5 class="font-weight-normal border-top border-secondary pt-4 mb-4"><a class="dark-grey-text" href="#">Tuổi</a></h5>
+                <p class="text-muted mb-5 pb-md-3">{{your_age}}</p>
+                <h5 class="font-weight-normal border-top border-light pt-4 mb-4"><a class="dark-grey-text" href="#">CMND/BHYT</a></h5>
+                <p class="text-muted mb-5">{{your_idCard}}</p>
+                <h5 class="font-weight-normal border-top border-light pt-4 mb-4"><a class="dark-grey-text" href="#">Bệnh viện</a></h5>
+                <p class="text-muted mb-5">{{your_hostpital}}</p>
+                <h5 class="font-weight-normal border-top border-light pt-4 mb-4"><a class="dark-grey-text" href="#">Khung giờ</a></h5>
+                <p class="text-muted mb-5">{{your_time}}</p>
+                <h5 class="font-weight-normal border-top border-light pt-4 mb-4"><a class="dark-grey-text" href="#">Ngày</a></h5>
+                <p class="text-muted mb-5">{{your_date}}</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- Section -->
+
 </div>
 <!-- //Main Content -->
 {% endblock content %}

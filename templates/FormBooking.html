@@ -1,40 +1,46 @@
 {% extends "baseform.html" %} {% block content %}
 <!-- Main Content -->
-<div class="main" style="background-image: url('https://image.shutterstock.com/image-photo/senior-womans-hand-signing-document-600w-315641624.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
-    <div class="main-w3l">
-        <h1 class="logo-w3 black-text">Form đăng kí đặt lịch hẹn</h1>
-        <div class="w3layouts-main">
-            <form action="/appointment" method="post">
-                {% csrf_token %}
-                <input placeholder="Họ và tên" name="Name" type="text" required="">
-                <input placeholder="Tuổi" name="Age" type="number" required="">
-                <input placeholder="Số điện thoại" name="phone" type="text" required="">
-                <input placeholder="CMND/BHYT" name="idCardNumber" type="text" required="">
-                <input placeholder="Địa chỉ" name="Address" type="text" required="">
-                <input placeholder="Tỉnh/Thành Phố" name="City" type="text" required="">
-                <input placeholder="Quận/Huyện" name="Province" type="text" required="">
-                <select id="bv" name="Hostpital" title="Bệnh viện" placeholder="Bệnh Viện" required="">
-                    <option value="Bệnh viện">Bệnh viện</option>
-                    <option value="Bệnh viện Da Liễu Thành Phố Đà Nẵng">Bệnh viện Da Liễu Thành Phố Đà Nẵng</option>
-                    <option value="Bệnh viện Gia Đình">Bệnh viện Gia Đình</option>
-                    <option value="Bệnh Viện Hoàn Mỹ">Bệnh Viện Hoàn Mỹ</option>
-                </select>
-                <input placeholder="Ngày Khám" name="date" type="date" title="Ngày khám" required="">
-                <select placeholder="Giờ Khám" name="time" type="time" title="Giờ Khám" required="">
-                    <option value="8:00-9:00">8:00-9:00</option>
-                    <option value="9:00-10:00">9:00-10:00</option>
-                    <option value="11:00-12:00">11:00-12:00</option>
-                    <option value="13:00-14:00">13:00-14:00</option>
-                    <option value="14:00-15:00">14:00-15:00</option>
-                    <option value="15:00-16:00">15:00-16:00</option>
-                    <option value="17:00-18:00">17:00-18:00</option>
+<div class="home" style="background-image: url('https://cdn.pixabay.com/photo/2015/05/24/06/13/medical-781422_960_720.jpg'); background-repeat: no-repeat; background-size: cover  ; width :  100% ; height : 100%">
+    <div class="main">
+        <div class="main-w3l">
+            <h1 class="logo-w3 black-text" style="padding-top: 5%;">Đăng kí đặt lịch hẹn</h1>
+            <div class="w3layouts-main">
+                <form action="/appointment" method="post">
+                    {% csrf_token %}
+                    <input placeholder="Họ và tên" name="Name" type="text" required="">
+                    <input placeholder="Tuổi" name="Age" type="number" required="">
+                    <input placeholder="Số điện thoại" name="phone" type="text" required="">
+                    <input placeholder="CMND/BHYT" name="idCardNumber" type="text" required="">
+                    <input placeholder="Địa chỉ" name="Address" type="text" required="">
+                    <input placeholder="Tỉnh/Thành Phố" name="City" type="text" required="">
+                    <input placeholder="Quận/Huyện" name="Province" type="text" required="">
+                    <select id="bv" name="Hostpital" title="Bệnh viện" placeholder="Bệnh Viện" required="">
+                        <option value="Bệnh viện">Bệnh viện</option>
+                        <option value="Bệnh viện Da Liễu Thành Phố Đà Nẵng">Bệnh viện Da Liễu Thành Phố Đà Nẵng</option>
+                        <option value="Bệnh viện Gia Đình">Bệnh viện Gia Đình</option>
+                        <option value="Bệnh Viện Hoàn Mỹ">Bệnh Viện Hoàn Mỹ</option>
+                    </select>
+                    <input placeholder="Ngày Khám" name="date" type="date" title="Ngày khám" required="">
+                    <select placeholder="Giờ Khám" name="time" type="time" title="Giờ Khám" required="">
+                        <option value="8:00-9:00">8:00-9:00</option>
+                        <option value="9:00-10:00">9:00-10:00</option>
+                        <option value="11:00-12:00">11:00-12:00</option>
+                        <option value="13:00-14:00">13:00-14:00</option>
+                        <option value="14:00-15:00">14:00-15:00</option>
+                        <option value="15:00-16:00">15:00-16:00</option>
+                        <option value="17:00-18:00">17:00-18:00</option>
+    
+                    </select>
+                    <input type="submit" value="Đặt Lịch" name="send">
+                </form>
+            </div>
 
-                </select>
-                <input type="submit" value="Đặt Lịch" name="send">
-            </form>
         </div>
-
     </div>
 </div>
+<section style="background-image: url('https://image.shutterstock.com/image-photo/senior-womans-hand-signing-document-600w-315641624.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center; width : 100% ; height : 100% ">
+
+</section>
+
 <!-- //Main Content -->
 {% endblock content %}
